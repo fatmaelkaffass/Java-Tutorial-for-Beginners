@@ -1,6 +1,6 @@
-public class Hello {
+public class Type_conversion_and_Casting {
     public static void main(String[] args) {
-        int age =30;
+         int age =30;
         System.out.println(age);
         System.out.println(3+5);
         //type conversion and casting
@@ -14,6 +14,5 @@ public class Hello {
         double pi=3.14159;
         int approxpi=(int)pi;//syntax is : (TargetType)value
         System.out.println(approxpi);
-        
-    } 
+    }  
 }

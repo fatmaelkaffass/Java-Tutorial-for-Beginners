@@ -1,3 +1,5 @@
+import java.util.StringTokenizer;
+
 public class stringEx {
     public static void main(String[] args) {
         String str = "Hello, Java!";
@@ -20,5 +22,43 @@ public class stringEx {
         // Equals comparison
         String str2 = "hello, java!";
         System.out.println("Equals ignoring case: " + str.equalsIgnoreCase(str2));
+        //_______________________________________________
+        // StringBuffer Example
+        StringBuffer sb = new StringBuffer("Hello");
+        sb.append(" World");
+        System.out.println("After append: " + sb);
+
+        sb.insert(5, ",");
+        System.out.println("After insert: " + sb);
+
+        sb.delete(5, 6);
+        System.out.println("After delete: " + sb);
+
+        sb.replace(0, 5, "Hi");
+        System.out.println("After replace: " + sb);
+
+        //_______________________________________________
+        // StringBuilder Example
+         StringBuilder sb1 = new StringBuilder("Hello");
+        sb1.append(" Java");
+        System.out.println("After append: " + sb1);
+
+        sb1.reverse();
+        System.out.println("Reversed: " + sb1);
+
+        sb1.deleteCharAt(0);
+        System.out.println("After deleteCharAt: " + sb1);
+
+        sb1.insert(0, "Hi");
+        System.out.println("After insert: " + sb1);
+        //_______________________________________________
+        // Tokenize based on comma
+        String data = "Java,Python,C++,JavaScript";
+        
+        StringTokenizer tokenizer = new StringTokenizer(data, ",");
+
+        while (tokenizer.hasMoreTokens()) {
+            System.out.println("Token: " + tokenizer.nextToken());
+        }
     }
 }
