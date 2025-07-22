@@ -22,7 +22,10 @@ public class stringEx {
         // Equals comparison
         String str2 = "hello, java!";
         System.out.println("Equals ignoring case: " + str.equalsIgnoreCase(str2));
-        //_______________________________________________
+
+        // get a specific index
+        System.out.println("The Second Character is : " + str.charAt(1));
+        // _______________________________________________
         // StringBuffer Example
         StringBuffer sb = new StringBuffer("Hello");
         sb.append(" World");
@@ -37,9 +40,9 @@ public class stringEx {
         sb.replace(0, 5, "Hi");
         System.out.println("After replace: " + sb);
 
-        //_______________________________________________
+        // _______________________________________________
         // StringBuilder Example
-         StringBuilder sb1 = new StringBuilder("Hello");
+        StringBuilder sb1 = new StringBuilder("Hello");
         sb1.append(" Java");
         System.out.println("After append: " + sb1);
 
@@ -51,10 +54,10 @@ public class stringEx {
 
         sb1.insert(0, "Hi");
         System.out.println("After insert: " + sb1);
-        //_______________________________________________
+        // _______________________________________________
         // Tokenize based on comma
         String data = "Java,Python,C++,JavaScript";
-        
+
         StringTokenizer tokenizer = new StringTokenizer(data, ",");
 
         while (tokenizer.hasMoreTokens()) {

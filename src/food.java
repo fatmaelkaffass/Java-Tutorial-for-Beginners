@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class food {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in); // create a new object called scanner to get the inputs from the
+        Scanner scanner = new Scanner(System.in); // create a new object called scanner to get the inputs from thema
                                                   // user
         String[] foods = new String[5];// create a new empty array with aspecific num of indexes
         for (int fo = 0; fo < foods.length; fo++) {
@@ -15,6 +15,7 @@ public class food {
         {
             System.out.print(food + " ");
         }
+        System.out.println();
         scanner.close();
     }
 }
